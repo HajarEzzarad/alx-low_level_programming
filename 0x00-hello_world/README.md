@@ -1,1 +1,1 @@
-Creating first Hello World in C
+First Hello World
