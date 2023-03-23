@@ -1,17 +1,25 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_line - prints straight line n times.
- * @n: times straight line is printed.
- * Return: no return.
+ * print_line - a function that draws a straight line in the terminal
+ * @n: input number
+ * Return: _ if n is greater than 0, else \n
  */
+
 void print_line(int n)
 {
 	int i;
 
-	for (i = 0; i < n; i++)
+	if (n > 0)
 	{
-		_putchar(95);
+		for (i = 0; i < n; i++)
+		{
+			_putchar('_');
+		}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 	_putchar('\n');
 }
