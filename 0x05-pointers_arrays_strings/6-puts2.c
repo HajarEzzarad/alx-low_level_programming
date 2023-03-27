@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 #include "2-strlen.c"
 /**
  * puts2 - puts string twice
