@@ -11,9 +11,9 @@ a : the number of bytes to be filled.
  {
 
 	 unsigned int i;
-	 for i=0;i<a;i++)
+	 for(i=0;i<a;i++)
 	 {
 		*(s+i)=b;
 	 }
-	 return m;
+	 return (s);
  }
