@@ -6,5 +6,5 @@
  */
 
 
-void *_memset(void *s,char b,unsigned int a);
+void *_memset(char *s,char b,unsigned int a);
 #endif
