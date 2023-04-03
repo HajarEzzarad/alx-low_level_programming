@@ -11,10 +11,9 @@ a : the number of bytes to be filled.
  {
 
 	 unsigned int i;
-	 unsigned char *m=s,value=c;
 	 for i=0;i<a;i++)
 	 {
-		 m[i]=value;
+		*(s+i)=b;
 	 }
 	 return m;
  }
