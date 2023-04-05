@@ -8,28 +8,28 @@
  */
 int is_prime_number(int n)
 {
-if (n <= 1)
+int i;
+if (n <= 1) 
 {
-return (0);
+return 0;
+}
+else if (n == 2 || n == 3)
+{
+return 1;
+}
+else if (n % 2 == 0 || n % 3 == 0)
+{
+return 0;
 }
 else
 {
-return (is_prime_helper(n, 2));
-}
-}
-/**
- * is_prime_number - detects if an input number is a prime number.
- * @n: input number.
- * Return: 1 if n is a prime number. 0 if n is not a prime number.
- */
-int is_prime_helper(unsigned int n, unsigned int c)
+for (i = 5; i*i <= n; i += 6)
 {
-	if (n % c == 0)
-	{
-		if (n == c)
-			return (1);
-		else
-			return (0);
-	}
-	return (0 + is_prime_helper(n, c + 1));
+if (n % i == 0 || n % (i+2) == 0)
+{
+return 0;
+}
+}
+return 1;
+}
 }
