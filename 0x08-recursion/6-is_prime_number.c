@@ -20,7 +20,7 @@ if (i * i > n)
 {
 return (1);
 }
-return _prime_helper(n, i + 1);
+return (_prime_helper(n, i + 1));
 }
 /**
  * is_prime_number - detects if an input number is a prime number.
