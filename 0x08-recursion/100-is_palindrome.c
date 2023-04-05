@@ -21,8 +21,8 @@ return (1 + _strlen_recursion(s + 1));
 /**
  * helper - compares each character of the string.
  * @s: string
- * @n1: smallest iterator.
- * @n2: biggest iterator.
+ * @start: smallest iterator.
+ * @end: biggest iterator.
  * Return: .
  */
 int helper(char *s, int start, int end)
