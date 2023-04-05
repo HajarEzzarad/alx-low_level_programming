@@ -5,6 +5,6 @@
  * its a heder file containing protypes for all my functiond
  */
 
-
+int _putchar(char);
 void _puts_recursion(char *s);
 #endif
