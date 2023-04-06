@@ -2,8 +2,9 @@
 
 
 /**
- * _sqrt_helper - 
- * @n: 
+ * _sqrt_helper - a function that recurses
+ * to find the natural square root of a number
+ * @n: input number
  * @i: iterator
  * Return: a square root
  */
