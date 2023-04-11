@@ -1,28 +1,40 @@
 #include "main.h"
-/**
- * str_concat - concatenates two strings.
- * @s1: first string.
- * @s2: second string.
- *
- * Return: pointer of an array of chars
- */
+#include <stddef.h>
+#include <string.h>
 
+/**
+ * str_concat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ *
+ * Return: pointer to concatenated string, or NULL on failure
+ */
 char *str_concat(char *s1, char *s2)
 {
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+    char *concat;
+    size_t s1_len, s2_len, i, j;
 
-	size_t s1_len = strlen(s1);
-	size_t s2_len = strlen(s2);
+    if (s1 == NULL)
+        s1 = "";
+    if (s2 == NULL)
+        s2 = "";
 
-	char *result = malloc((s1_len + s2_len + 1) * sizeof(char));
-	if (result == NULL)
-		return NULL;
+    s1_len = strlen(s1);
+    s2_len = strlen(s2);
 
-	strcpy(result, s1);
-	strcat(result, s2);
+    concat = malloc(sizeof(char) * (s1_len + s2_len + 1));
 
-	return result;
+    if (concat == NULL)
+        return (NULL);
+
+    for (i = 0; i < s1_len; i++)
+        concat[i] = s1[i];
+
+    for (j = 0; j < s2_len; j++, i++)
+        concat[i] = s2[j];
+
+    concat[i] = '\0';
+
+    return (concat);
 }
+
