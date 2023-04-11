@@ -7,7 +7,6 @@
  *
  * Return: pointer of an array of chars
  */
-
 char *_strdup(char *str)
 {
 if (str == NULL)
@@ -15,11 +14,11 @@ if (str == NULL)
 return (NULL);
 }
 size_t len = strlen(str) + 1;
-char *strout = (char *) malloc(len * sizeof(char));
-if (strout == NULL)
+char *dup_str = malloc(len);
+if (dup_str == NULL)
 {
 return (NULL);
 }
-memcpy(strout, str, len);
-return (strout);
+memcpy(dup_str, str, len);
+return (dup_str);
 }
