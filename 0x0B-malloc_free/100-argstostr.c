@@ -18,6 +18,7 @@ char *str;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
+}
 for (i = 0; i < ac; i++)
 {
 len = strlen(av[i]);
