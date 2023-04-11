@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 #include <string.h>
 #include <stdlib.h>
@@ -18,3 +19,6 @@ return (NULL);
 memcpy(dup_str, str, len);
 return (dup_str);
 }
+=======
+
+>>>>>>> 021b65fcc55b9305cc7dc24f501f18ca2f263f29
