@@ -15,7 +15,7 @@ if (str == NULL)
 return (NULL);
 }
 size_t len = strlen(str) + 1;
-*strout = (char *) malloc(len * sizeof(char));
+char *strout = (char *) malloc(len * sizeof(char));
 if (strout == NULL)
 {
 return (NULL);
